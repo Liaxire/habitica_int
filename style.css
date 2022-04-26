@@ -1,18 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
+
 ul {
     list-style: none;
 }
+
 nav {
     background-color: #432874;
     display: flex;
     justify-content: space-between;
     color: white;
 }
+
 #menu_bar {
-    display: none;}
+    display: none;
+}
+
 #nav_list {
     color: white;
     display: flex;
@@ -32,6 +37,7 @@ nav {
     border-bottom: 3px solid #4d3677;
     cursor: pointer;
 }
+
 #logo {
     padding: 1em 1.5em 1em 1.5em;
 }
@@ -41,41 +47,135 @@ nav {
     display: flex;
     justify-content: flex-start;
 }
+
 #end_nav {
     display: flex;
     justify-content: flex-start;
 }
+
 #resources li {
     padding: 1em 1.2em 1em 1.2em;
     font-size: 1.2em;
 }
+
 .resources_icon {
     padding: 1em 0em 1em 0em;
     font-size: 1.2em;
 }
+
 #refresh {
     padding: 1em 1.5em 1em 1.5em;
     color: lightgray;
     transition: color 0.25s;
 }
+
 #refresh:hover {
     color: white;
     cursor: pointer;
 }
 
-@media (max-width: 992px)
-{
-    #nav_list li, #resources {
+main {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.habits {
+    background-color: #edecee;
+    width: 400px;
+    height: 500px;
+    border: 5px solid #edecee;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#name {
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(26, 24, 29, .06);
+    margin: 0.2em 0.2em;
+}
+
+#name::placeholder {
+    padding-left: 1.5em;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 2em;
+
+}
+
+.top_info ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top_info ul li {
+    padding: 0.5em 0.5em 0em 0.5em;
+    cursor: pointer;
+    font-size: small;
+    font-weight: bold;
+    color: gray;
+}
+
+.top_info ul li:first-child {
+    border-bottom: 2px solid #432874;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    height: 35px;
+}
+
+#search_input {
+    margin-right: 1em;
+    width: 120px;
+}
+
+#search button {
+    width: 120px;
+}
+
+#search button::placeholder {
+    font-weight: bold;
+    text-align: center;
+}
+
+#search button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+    #nav_list li,
+    #resources {
         display: none;
     }
-    #menu_bar{
+
+    #menu_bar {
         padding: 1em 1.5em 1em 1.5em;
         display: flex;
         color: lightgray;
         transition: color 0.25s;
     }
-    #menu_bar:hover
-    {
+
+    #menu_bar:hover {
         color: white;
         cursor: pointer;
     }
